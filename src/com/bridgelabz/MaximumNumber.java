@@ -1,6 +1,13 @@
 package com.bridgelabz;
 
-public class MaximumNumber {
+public class MaximumNumber <T extends Comparable<T>> {
+    T a,b,c;
+
+    public MaximumNumber(T a,T b,T c){
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
     public static void main(String[] args) {
         System.out.println("Welcome Generics program......");
         System.out.println("Max Number of three Integer :" + Number(34, 48, 21));
